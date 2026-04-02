@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 GEMINI_API_KEY = "AIzaSyCpn_T3hHdQSsYKLsq9DBWhQvmkYuEaxow"
-GEMINI_URL = f"https://generativelanguage.googleapis.com/v1/models/gemini-3-flash-preview:generateContent?key={GEMINI_API_KEY}"
+GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key={GEMINI_API_KEY}"
 
 @app.route("/ask/<path:prompt>")
 def ask(prompt):
